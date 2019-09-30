@@ -12,6 +12,6 @@ sass:
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
-title:		           "Clement Baccar blog post"
+title:		           "Clement Baccar"
 description:	       "data world"
 author:              "Clément Baccar"
