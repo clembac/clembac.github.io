@@ -976,22 +976,22 @@
         dots.forEach(function(d, i) { if (i !== index) d.removeAttribute('aria-current'); });
       }
 
-      var slider = document.querySelector('.cv-video-slider');
-      if (slider) {
-        var track = slider.querySelector('.cv-video-track');
-        var dotsContainer = slider.querySelector('.cv-video-dots');
-        var slides = Array.prototype.slice.call(slider.querySelectorAll('.cv-video-slide'));
-        var dots = Array.prototype.slice.call(slider.querySelectorAll('.cv-video-dot'));
-        var n = slides.length;
+      var videoSlider = document.querySelector('.cv-video-slider');
+      if (videoSlider) {
+        var track = videoSlider.querySelector('.cv-video-track');
+        var dotsContainer = videoSlider.querySelector('.cv-video-dots');
+        var videoSlides = Array.prototype.slice.call(videoSlider.querySelectorAll('.cv-video-slide'));
+        var videoDots = Array.prototype.slice.call(videoSlider.querySelectorAll('.cv-video-dot'));
+        var n = videoSlides.length;
         if (n && track && dotsContainer) {
-          var order = shuffleArray(slides.map(function(_, i) { return i; }));
-          order.forEach(function(i) { track.appendChild(slides[i]); });
-          order.forEach(function(i) { dotsContainer.appendChild(dots[i]); });
+          var order = shuffleArray(videoSlides.map(function(_, i) { return i; }));
+          order.forEach(function(i) { track.appendChild(videoSlides[i]); });
+          order.forEach(function(i) { dotsContainer.appendChild(videoDots[i]); });
         }
 
-        var prev = slider.querySelector('.cv-video-slider-prev');
-        var next = slider.querySelector('.cv-video-slider-next');
-        var dots = slider.querySelectorAll('.cv-video-dot');
+        var prev = videoSlider.querySelector('.cv-video-slider-prev');
+        var next = videoSlider.querySelector('.cv-video-slider-next');
+        var dots = videoSlider.querySelectorAll('.cv-video-dot');
 
         if (prev) prev.addEventListener('click', function() { goToVideoSlide(videoCurrent - 1); });
         if (next) next.addEventListener('click', function() { goToVideoSlide(videoCurrent + 1); });
