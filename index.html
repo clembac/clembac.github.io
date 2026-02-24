@@ -1,156 +1,246 @@
 ---
 layout: arcade
-title: Clément Baccar · CV
+title: Clément Baccar · Head of Data & AI · Paris
 ---
 
 <div class="arcade-wrap">
 
-  <!-- ════════════════════════════════════
+  <!-- ════════════════════════════════════════════
        TITLE BAR
-  ════════════════════════════════════ -->
+  ════════════════════════════════════════════ -->
   <header class="arcade-titlebar">
+    <div class="arcade-score-row">
+      <span>SCORE <span class="arcade-score-val">10.YRS.EXP</span></span>
+      <span>LEVEL <span class="arcade-score-val">HEAD_OF_DATA_AND_AI</span></span>
+      <span>STATUS <span class="arcade-score-val" style="color:var(--neon-green);text-shadow:0 0 6px var(--neon-green)">OPEN TO HIRE</span></span>
+    </div>
     <span class="arcade-game-title">CLÉMENT BACCAR</span>
+    <span class="arcade-subtitle">HEAD OF DATA &amp; AI · AI TRAINER · DATA LEADER</span>
     <span class="arcade-insert-coin">▶ CV.EXE — INSERT COIN TO CONTINUE ◀</span>
   </header>
 
-  <!-- ════════════════════════════════════
-       PLAYER 1 — HERO CARD
-  ════════════════════════════════════ -->
-  <div class="cv-hero cv-hero-bottom-corners">
+  <!-- ── Quick-jump nav ── -->
+  <nav class="arcade-nav" aria-label="CV sections">
+    <a href="#bio">CHARACTER</a>
+    <a href="#stats">STATS</a>
+    <a href="#experience">QUEST LOG</a>
+    <a href="#skills">INVENTORY</a>
+    <a href="#speaking">ACHIEVEMENTS</a>
+    <a href="#education">TRAINING</a>
+    <a href="#community">GUILDS</a>
+  </nav>
+
+  <!-- ════════════════════════════════════════════
+       HERO — PLAYER 1 SELECT
+  ════════════════════════════════════════════ -->
+  <section class="cv-hero cv-hero-top-corners" aria-label="Contact information">
+    <div class="cv-hero-stripe"></div>
     <span class="player-badge">★ PLAYER 1 ★</span>
+
     <div class="cv-hero-inner">
       <div class="cv-hero-name">
         <h1>CLÉMENT<br>BACCAR</h1>
-        <p class="cv-hero-tagline">HEAD OF DATA &amp; AI · AI TRAINER · DATA LEADER</p>
+        <p class="cv-hero-tagline">HEAD OF DATA &amp; AI · PARIS, FR</p>
+        <p class="cv-hero-open">◉ OPEN TO NEW OPPORTUNITIES</p>
       </div>
-      <div class="cv-hero-contacts">
+
+      <address class="cv-hero-contacts" style="font-style:normal">
         <div class="cv-hero-contact-row">
-          <i class="fa fa-envelope"></i>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
           <a href="mailto:baccar.clement@gmail.com">baccar.clement@gmail.com</a>
         </div>
         <div class="cv-hero-contact-row">
-          <i class="fa fa-phone"></i>
+          <i class="fa fa-phone" aria-hidden="true"></i>
           <a href="tel:+33607960463">+33 6 07 96 04 63</a>
         </div>
         <div class="cv-hero-contact-row">
-          <i class="fa fa-map-marker"></i>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
           <span>Paris, France</span>
         </div>
         <div class="cv-hero-contact-row">
-          <i class="fa fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/clement-baccar-a23b6768/" target="_blank" rel="noopener">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <a href="https://www.linkedin.com/in/clement-baccar-a23b6768/" target="_blank" rel="noopener noreferrer">
             linkedin/clement-baccar
           </a>
         </div>
-      </div>
+        <div class="cv-hero-contact-row">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <a href="https://github.com/clembac" target="_blank" rel="noopener noreferrer">
+            github/clembac
+          </a>
+        </div>
+      </address>
     </div>
-  </div>
+  </section>
 
-  <!-- ════════════════════════════════════
+  <!-- ════════════════════════════════════════════
+       STATS AT A GLANCE
+  ════════════════════════════════════════════ -->
+  <section id="stats" aria-label="Key career stats" class="cv-stats">
+    <div class="cv-stat-box">
+      <span class="cv-stat-num" data-target="10" data-suffix="+">10+</span>
+      <span class="cv-stat-label">YRS EXPERIENCE</span>
+    </div>
+    <div class="cv-stat-box">
+      <span class="cv-stat-num" data-target="200" data-suffix="k€">200k€</span>
+      <span class="cv-stat-label">REVENUE UNLOCKED</span>
+    </div>
+    <div class="cv-stat-box">
+      <span class="cv-stat-num" data-target="18" data-suffix="">18</span>
+      <span class="cv-stat-label">PEOPLE MANAGED</span>
+    </div>
+    <div class="cv-stat-box">
+      <span class="cv-stat-num" data-target="200" data-suffix="+">200+</span>
+      <span class="cv-stat-label">PROS TRAINED IN AI</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
        CHARACTER BIO
-  ════════════════════════════════════ -->
-  <div class="cv-card">
-    <h2><i class="fa fa-user"></i>// CHARACTER BIO</h2>
+  ════════════════════════════════════════════ -->
+  <section id="bio" class="cv-card" aria-label="Professional profile">
+    <h2><i class="fa fa-user" aria-hidden="true"></i>// CHARACTER BIO</h2>
     <p class="cv-profile-text">
-      Dual-track Data and AI leader combining deep technical expertise in MLOps, DataOps and GenAI
-      with executive strategy. Track record of building high-performing full-stack teams, driving
-      significant revenue generation through AI product innovation, and executing large-scale
-      modernisation of data architectures.
+      Dual-track Data and AI leader combining <strong>deep technical expertise</strong> in MLOps, DataOps
+      and GenAI with <strong>executive strategy</strong>. Track record of building high-performing full-stack
+      teams, driving significant <strong>revenue generation through AI product innovation</strong>, and
+      executing large-scale modernisation of data architectures. Speaker, AI trainer, and community
+      contributor in the French tech ecosystem.
     </p>
-  </div>
+  </section>
 
-  <!-- ════════════════════════════════════
+  <!-- ════════════════════════════════════════════
        2-COLUMN GRID
-  ════════════════════════════════════ -->
+  ════════════════════════════════════════════ -->
   <div class="cv-grid">
 
-    <!-- ══ RIGHT — most important content ══ -->
+    <!-- ══ RIGHT — main content (experience first) ══ -->
     <div class="cv-right">
 
       <!-- ─── QUEST LOG / EXPERIENCE ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-briefcase"></i>// QUEST LOG</h2>
+      <section id="experience" class="cv-card" aria-label="Professional experience">
+        <h2><i class="fa fa-briefcase" aria-hidden="true"></i>// QUEST LOG — EXPERIENCE</h2>
 
-        <div class="cv-exp-item">
+        <!-- Brut. -->
+        <article class="cv-exp-item">
+          <span class="cv-exp-badge">CURRENT QUEST</span>
           <p class="cv-exp-role">HEAD OF DATA &amp; AI</p>
           <p class="cv-exp-company">Brut.</p>
           <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> April 2022 – Present</span>
-            <span><i class="fa fa-map-marker"></i> Paris, France</span>
+            <span><i class="fa fa-calendar" aria-hidden="true"></i> April 2022 – Present</span>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Paris, France</span>
           </div>
           <ul class="cv-exp-bullets">
             <li><strong>Management &amp; Leadership:</strong> Recruited and managed an 8-person full-stack Data team (Data Engineers, Analysts, ML Engineers), fostering a product culture and full technical autonomy.</li>
             <li><strong>Business &amp; Revenue:</strong> Generated +200k€ in new revenue streams within months by developing commercial offers based on Generative AI.</li>
             <li><strong>GenAI Strategy &amp; Adoption:</strong> Deployed a global GenAI strategy for 200 employees across 3 continents, achieving a &gt;80% adoption rate.</li>
-            <li><strong>Innovation &amp; Product:</strong> Designed and deployed 5 major GenAI projects into production, transforming content creation and analysis.</li>
-            <li><strong>Infrastructure &amp; Reliability:</strong> Built a unified Analytics platform integrating 10+ data sources with continuous collection ensuring a &gt;95% SLA.</li>
+            <li><strong>Innovation &amp; Product:</strong> Designed and deployed 5 major GenAI projects into production, transforming content creation and analysis workflows.</li>
+            <li><strong>Infrastructure &amp; Reliability:</strong> Built a unified Analytics platform integrating 10+ data sources (Social Media, Third-party) with continuous collection ensuring a &gt;95% SLA.</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="cv-exp-item">
+        <!-- Pollen -->
+        <article class="cv-exp-item">
           <p class="cv-exp-role">AI TRAINER</p>
           <p class="cv-exp-company">Pollen</p>
           <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> June 2023 – Present</span>
-            <span><i class="fa fa-map-marker"></i> France</span>
+            <span><i class="fa fa-calendar" aria-hidden="true"></i> June 2023 – Present</span>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i> France</span>
           </div>
           <ul class="cv-exp-bullets">
-            <li>Trained 200+ professionals on Generative AI across various organisations.</li>
+            <li>Trained <strong>200+ professionals</strong> on Generative AI across various organisations, designing custom workshops covering prompt engineering, AI adoption strategy, and LLM integration.</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="cv-exp-item">
+        <!-- namR -->
+        <article class="cv-exp-item">
           <p class="cv-exp-role">HEAD OF DATA &amp; ML ENGINEERING</p>
           <p class="cv-exp-company">namR</p>
           <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> Dec 2018 – April 2022</span>
-            <span><i class="fa fa-map-marker"></i> Paris, France</span>
+            <span><i class="fa fa-calendar" aria-hidden="true"></i> Dec 2018 – April 2022</span>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Paris, France</span>
           </div>
           <ul class="cv-exp-bullets">
-            <li><strong>Deep Learning &amp; Scale:</strong> Developed and industrialised a Deep Learning inference platform processing 34M+ aerial images for French building characterisation.</li>
-            <li><strong>Transformation &amp; Modern Data Stack:</strong> Led strategic migration of 500+ tables and workflows from legacy systems to a "Code-First" architecture (Airflow), integrating MLOps and Data Quality standards.</li>
-            <li><strong>Team Management:</strong> Grew and structured the team to 10 Data Engineers, managing full-cycle recruitment, career paths, and technical upskilling.</li>
+            <li><strong>Deep Learning &amp; Scale:</strong> Developed and industrialised a Deep Learning inference platform processing <strong>34M+ aerial images</strong> for French building characterisation.</li>
+            <li><strong>Transformation &amp; Modern Data Stack:</strong> Led the strategic migration of <strong>500+ tables and workflows</strong> from legacy systems to a "Code-First" architecture (Airflow), integrating MLOps and Data Quality standards.</li>
+            <li><strong>Team Management:</strong> Grew and structured the team to <strong>10 Data Engineers</strong>, managing full-cycle recruitment, career paths, and technical upskilling.</li>
             <li><strong>Architecture:</strong> Designed automated ingestion pipelines for Open Data, reducing technical debt and accelerating update cycles.</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="cv-exp-item">
+        <!-- Saegus -->
+        <article class="cv-exp-item">
           <p class="cv-exp-role">MACHINE LEARNING ENGINEER</p>
           <p class="cv-exp-company">Saegus</p>
           <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> Feb 2016 – Nov 2018</span>
-            <span><i class="fa fa-map-marker"></i> Paris, France</span>
+            <span><i class="fa fa-calendar" aria-hidden="true"></i> Feb 2016 – Nov 2018</span>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Paris, France</span>
           </div>
           <ul class="cv-exp-bullets">
-            <li>Machine learning engineer focused on customer insight and data-driven product development.</li>
+            <li>Machine learning engineer focused on customer insight and data-driven product development for major enterprise clients.</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="cv-exp-item">
+        <!-- Air France -->
+        <article class="cv-exp-item">
           <p class="cv-exp-role">ML ENGINEER — CUSTOMER INSIGHT</p>
           <p class="cv-exp-company">Air France</p>
           <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> Oct 2014 – Oct 2015</span>
-            <span><i class="fa fa-map-marker"></i> Paris, France</span>
+            <span><i class="fa fa-calendar" aria-hidden="true"></i> Oct 2014 – Oct 2015</span>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Paris, France</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- ─── ACHIEVEMENTS / SPEAKING ─── -->
+      <section id="speaking" class="cv-card cv-card--cyan" aria-label="Speaking and media appearances">
+        <h2><i class="fa fa-microphone" aria-hidden="true"></i>// ACHIEVEMENTS UNLOCKED — SPEAKING</h2>
+
+        <p class="cv-conf-text">
+          Speaker at tech events and guest on podcasts covering <strong>Data Strategy</strong>,
+          <strong>Generative AI adoption</strong> and <strong>MLOps</strong> — from building data
+          teams at scale to practical GenAI in the enterprise.
+        </p>
+
+        <ul class="cv-achievement-list">
+          <li>
+            <span class="trophy">🏆</span>
+            <span><strong>Conference Speaker</strong> — Data Strategy &amp; GenAI in the enterprise: lessons from Brut. on deploying AI at scale across 3 continents.</span>
+          </li>
+          <li>
+            <span class="trophy">🎙️</span>
+            <span><strong>Podcast Guest</strong> — MLOps, modern data architecture and the human side of AI adoption in media &amp; content companies.</span>
+          </li>
+          <li>
+            <span class="trophy">🎓</span>
+            <span><strong>AI Trainer</strong> — Designed and delivered Generative AI workshops for 200+ professionals across corporations and public sector organisations.</span>
+          </li>
+        </ul>
+
+        <!-- ── YouTube video embed ── -->
+        <div style="margin-top:1.5rem">
+          <p class="cv-video-label">◆ FEATURED TALK / MEDIA — PRESS PLAY</p>
+          <div class="cv-video-wrap">
+            <!-- Replace VIDEO_ID with the actual YouTube video ID when available -->
+            <iframe
+              src="https://www.youtube.com/embed/?listType=search&list=Clement+Baccar+data+AI"
+              title="Clément Baccar — Talk on Data & AI"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
           </div>
         </div>
 
-      </div><!-- /quest log -->
+      </section>
 
-      <!-- ─── ACHIEVEMENTS / CONFERENCES ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-microphone"></i>// ACHIEVEMENTS UNLOCKED</h2>
-        <p class="cv-conf-text">
-          Speaker at various tech events and guest on podcasts discussing <strong>Data Strategy</strong>,
-          <strong>Generative AI</strong> and <strong>MLOps</strong>. Topics cover GenAI adoption in the enterprise,
-          modern data architectures, and lessons from building data teams at scale.
-        </p>
-      </div>
-
-      <!-- ─── DOWNLOAD ─── -->
+      <!-- ─── DOWNLOAD / CTA ─── -->
       <div class="cv-download-wrap">
         <a href="/pages/cv_baccar_clement.pdf" class="cv-download" download>
-          <i class="fa fa-download"></i> DOWNLOAD.PDF
+          <i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD.PDF
+        </a>
+        <a href="https://www.linkedin.com/in/clement-baccar-a23b6768/" class="cv-download cv-linkedin-btn" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-linkedin" aria-hidden="true"></i> LINKEDIN
         </a>
       </div>
 
@@ -160,8 +250,8 @@ title: Clément Baccar · CV
     <div class="cv-left">
 
       <!-- ─── INVENTORY / TECH STACK ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-code"></i>// INVENTORY</h2>
+      <section id="skills" class="cv-card" aria-label="Technical skills">
+        <h2><i class="fa fa-code" aria-hidden="true"></i>// INVENTORY — TECH STACK</h2>
 
         <div class="cv-chips-group">
           <p class="cv-chips-group-label">◆ Languages &amp; Core</p>
@@ -207,11 +297,36 @@ title: Clément Baccar · CV
             <li>pgRouting</li><li>QGIS</li>
           </ul>
         </div>
-      </div><!-- /inventory -->
+      </section>
+
+      <!-- ─── LANGUAGES UNLOCKED ─── -->
+      <section class="cv-card" aria-label="Language skills">
+        <h2><i class="fa fa-globe" aria-hidden="true"></i>// LANGUAGES UNLOCKED</h2>
+
+        <div class="cv-lang">
+          <div class="cv-lang-header">
+            <span class="cv-lang-name">French</span>
+            <span class="cv-lang-level">NATIVE</span>
+          </div>
+          <div class="cv-lang-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="cv-lang-bar-fill" style="width:100%"></div>
+          </div>
+        </div>
+
+        <div class="cv-lang">
+          <div class="cv-lang-header">
+            <span class="cv-lang-name">English</span>
+            <span class="cv-lang-level">PROFESSIONAL</span>
+          </div>
+          <div class="cv-lang-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="cv-lang-bar-fill" style="width:85%"></div>
+          </div>
+        </div>
+      </section>
 
       <!-- ─── TRAINING ARC / EDUCATION ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-graduation-cap"></i>// TRAINING ARC</h2>
+      <section id="education" class="cv-card cv-card--cyan" aria-label="Education">
+        <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i>// TRAINING ARC — EDUCATION</h2>
 
         <div class="cv-edu-item">
           <p class="cv-edu-degree">Advanced Master, IT Management (Joint Degree)</p>
@@ -220,74 +335,55 @@ title: Clément Baccar · CV
         </div>
 
         <div class="cv-edu-item">
-          <p class="cv-edu-degree">Master 2 Data Science, Econometrics, ML</p>
+          <p class="cv-edu-degree">Master 2 Data Science, Econometrics &amp; ML</p>
           <p class="cv-edu-school">Panthéon-Sorbonne (Paris I)</p>
           <p class="cv-edu-date">2014 – 2015</p>
         </div>
-      </div><!-- /education -->
+      </section>
 
-      <!-- ─── LANGUAGES UNLOCKED ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-globe"></i>// LANGUAGES UNLOCKED</h2>
-
-        <div class="cv-lang">
-          <div class="cv-lang-header">
-            <span class="cv-lang-name">French</span>
-            <span class="cv-lang-level">NATIVE</span>
-          </div>
-          <div class="cv-lang-bar"><div class="cv-lang-bar-fill" style="width:100%"></div></div>
-        </div>
-
-        <div class="cv-lang">
-          <div class="cv-lang-header">
-            <span class="cv-lang-name">English</span>
-            <span class="cv-lang-level">PROFESSIONAL</span>
-          </div>
-          <div class="cv-lang-bar"><div class="cv-lang-bar-fill" style="width:85%"></div></div>
-        </div>
-      </div><!-- /languages -->
-
-      <!-- ─── GUILD MEMBERSHIPS ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-users"></i>// GUILD MEMBERSHIPS</h2>
+      <!-- ─── GUILD MEMBERSHIPS / COMMUNITY ─── -->
+      <section id="community" class="cv-card cv-card--purple" aria-label="Community and volunteer activities">
+        <h2><i class="fa fa-users" aria-hidden="true"></i>// GUILD MEMBERSHIPS</h2>
 
         <div class="cv-community-item">
           <p class="cv-community-role">Member (Core)</p>
           <p class="cv-community-org">Tech.Rocks</p>
-          <p class="cv-community-meta"><i class="fa fa-calendar"></i> Nov 2024 – Present &nbsp;·&nbsp; France</p>
-          <p class="cv-community-desc">Network of tech leaders in France.</p>
+          <p class="cv-community-meta"><i class="fa fa-calendar" aria-hidden="true"></i> Nov 2024 – Present &nbsp;·&nbsp; France</p>
+          <p class="cv-community-desc">Network of tech leaders in France — peer learning and community building for CTOs and engineering leaders.</p>
         </div>
 
         <div class="cv-community-item">
           <p class="cv-community-role">Data Architect Advisor</p>
-          <p class="cv-community-org">The Future Society – Project AIM</p>
-          <p class="cv-community-meta"><i class="fa fa-calendar"></i> Jan 2021 – July 2022 &nbsp;·&nbsp; Remote</p>
-          <p class="cv-community-desc">Think tank incubated at Harvard Kennedy School on AI governance.</p>
+          <p class="cv-community-org">The Future Society — Project AIM</p>
+          <p class="cv-community-meta"><i class="fa fa-calendar" aria-hidden="true"></i> Jan 2021 – July 2022 &nbsp;·&nbsp; Remote</p>
+          <p class="cv-community-desc">Think tank incubated at Harvard Kennedy School on AI governance and responsible AI policy.</p>
         </div>
 
         <div class="cv-community-item">
           <p class="cv-community-role">GIS Engineer (Volunteer)</p>
-          <p class="cv-community-org">SurfRider – Plastic Origin</p>
-          <p class="cv-community-meta"><i class="fa fa-calendar"></i> Mar 2020 – Dec 2021 &nbsp;·&nbsp; Remote</p>
-          <p class="cv-community-desc">Mapping European riverine plastic pollution using GIS and computer vision.</p>
+          <p class="cv-community-org">SurfRider — Plastic Origin</p>
+          <p class="cv-community-meta"><i class="fa fa-calendar" aria-hidden="true"></i> Mar 2020 – Dec 2021 &nbsp;·&nbsp; Remote</p>
+          <p class="cv-community-desc">Mapped European riverine plastic pollution using GIS and computer vision to inform environmental policy.</p>
         </div>
-      </div><!-- /guild -->
+      </section>
 
     </div><!-- /left -->
 
   </div><!-- /cv-grid -->
 
-  <!-- ════════════════════════════════════
+  <!-- ════════════════════════════════════════════
        FOOTER
-  ════════════════════════════════════ -->
+  ════════════════════════════════════════════ -->
   <footer class="arcade-footer">
-    <div class="arcade-footer-line">© 2024 CLÉMENT BACCAR &nbsp;·&nbsp; GAME OVER &nbsp;·&nbsp; CONTINUE?</div>
-    <div class="arcade-social">
-      <a href="https://twitter.com/baccarclement"  title="Twitter" ><i class="fa fa-twitter"></i></a>
-      <a href="https://github.com/clembac"         title="GitHub"  ><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/clement-baccar-a23b6768/" title="LinkedIn" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
-      <a href="mailto:baccar.clement@gmail.com"    title="Email"   ><i class="fa fa-envelope"></i></a>
+    <div class="arcade-footer-line">
+      © 2025 CLÉMENT BACCAR &nbsp;·&nbsp; GAME OVER &nbsp;·&nbsp; CONTINUE? [Y/N]
     </div>
+    <nav class="arcade-social" aria-label="Social links">
+      <a href="https://twitter.com/baccarclement"  title="Twitter / X"     aria-label="Twitter"><i class="fa fa-twitter"  aria-hidden="true"></i></a>
+      <a href="https://github.com/clembac"         title="GitHub"           aria-label="GitHub" ><i class="fa fa-github"   aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/clement-baccar-a23b6768/" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="mailto:baccar.clement@gmail.com"    title="Email"            aria-label="Email"  ><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </nav>
   </footer>
 
 </div><!-- /arcade-wrap -->

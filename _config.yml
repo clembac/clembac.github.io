@@ -1,17 +1,25 @@
-# Build settings
-
-markdown: kramdown
+# ── Build settings ──────────────────────────────────────
+markdown:  kramdown
 permalink: none
-plugins:             [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
-
-port: 4000
+plugins:   [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+port:      4000
 
 sass:
   sass_dir: assets/css
-  style: :nested
+  style:    :compressed
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+# ── Site identity ────────────────────────────────────────
+title:       "Clément Baccar"
+description: "Head of Data & AI with 10+ years building MLOps, GenAI and data engineering platforms. Open to new opportunities in Paris."
+author:      "Clément Baccar"
+url:         "https://clembac.github.io"
+baseurl:     ""
+lang:        "en"
 
-title:		           "Clement Baccar"
-description:	       "data world"
-author:              "Clément Baccar"
+# ── SEO plugin config (jekyll-seo-tag) ───────────────────
+twitter:
+  username: baccarclement
+
+# ── Feed ─────────────────────────────────────────────────
+feed:
+  path: feed.xml
