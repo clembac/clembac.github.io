@@ -1,217 +1,353 @@
 ---
 layout: arcade
-title: Clément Baccar · CV
+title: Clément Baccar · Head of Data &amp; AI, Generative AI &amp; Data Strategy
+description: Clément Baccar is Head of Data &amp; AI and a hands-on Generative AI expert based in Paris. Discover his experience in data strategy, MLOps, modern data platforms, AI training and advisory missions.
+permalink: /
 ---
 
-<div class="arcade-wrap">
-
-  <!-- ════════════════════════════════════
-       TITLE BAR
-  ════════════════════════════════════ -->
-  <header class="arcade-titlebar">
-    <span class="arcade-game-title">CLÉMENT BACCAR</span>
-    <span class="arcade-insert-coin">▶ CV.EXE — INSERT COIN TO CONTINUE ◀</span>
-  </header>
-
-  <!-- ════════════════════════════════════
-       PLAYER 1 — HERO CARD
-  ════════════════════════════════════ -->
-  <div class="cv-hero cv-hero-bottom-corners">
-    <span class="player-badge">★ PLAYER 1 ★</span>
+  <!-- HERO -->
+  <section class="cv-hero" aria-labelledby="cv-hero-heading">
     <div class="cv-hero-inner">
+      <figure class="cv-hero-photo">
+        <img src="/assets/img/clement-baccar-profile.png" alt="Portrait of Clément Baccar">
+      </figure>
       <div class="cv-hero-name">
-        <h1>CLÉMENT<br>BACCAR</h1>
-        <p class="cv-hero-tagline">HEAD OF DATA &amp; AI · AI TRAINER · DATA LEADER</p>
+        <h1 id="cv-hero-heading">Clément Baccar</h1>
+        <p class="cv-hero-tagline">Data &amp; AI | hands-on | Trainer | Advisory</p>
       </div>
-      <div class="cv-hero-contacts">
+      <div class="cv-hero-contacts" aria-label="Contact details">
         <div class="cv-hero-contact-row">
-          <i class="fa fa-envelope"></i>
-          <a href="mailto:baccar.clement@gmail.com">baccar.clement@gmail.com</a>
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          <a href="https://wa.me/33607960463?text=Bonjour%20Cl%C3%A9ment%20%F0%9F%91%8B" target="_blank" rel="noopener">
+            WhatsApp / +33 6 07 96 04 63
+          </a>
         </div>
         <div class="cv-hero-contact-row">
-          <i class="fa fa-phone"></i>
-          <a href="tel:+33607960463">+33 6 07 96 04 63</a>
-        </div>
-        <div class="cv-hero-contact-row">
-          <i class="fa fa-map-marker"></i>
-          <span>Paris, France</span>
-        </div>
-        <div class="cv-hero-contact-row">
-          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
           <a href="https://www.linkedin.com/in/clement-baccar-a23b6768/" target="_blank" rel="noopener">
             linkedin/clement-baccar
           </a>
         </div>
+        <div class="cv-hero-cta">
+          <button type="button" onclick="window.location.href='mailto:baccar.clement@gmail.com?subject=Contact%20from%20your%20website'">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            Send me a message
+          </button>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- ════════════════════════════════════
-       CHARACTER BIO
-  ════════════════════════════════════ -->
-  <div class="cv-card">
-    <h2><i class="fa fa-user"></i>// CHARACTER BIO</h2>
-    <p class="cv-profile-text">
-      Dual-track Data and AI leader combining deep technical expertise in MLOps, DataOps and GenAI
-      with executive strategy. Track record of building high-performing full-stack teams, driving
-      significant revenue generation through AI product innovation, and executing large-scale
-      modernisation of data architectures.
-    </p>
-  </div>
+  <!-- MAIN: single column, cards stacked -->
+  <main class="cv-main" aria-label="Experience, skills and education">
 
-  <!-- ════════════════════════════════════
-       2-COLUMN GRID
-  ════════════════════════════════════ -->
-  <div class="cv-grid">
+      <!-- EXPERIENCE -->
+      <article class="cv-card" aria-labelledby="cv-experience-heading">
+        <h2 id="cv-experience-heading"><i class="fa fa-briefcase" aria-hidden="true"></i>EXPERIENCE</h2>
 
-    <!-- ══ RIGHT — most important content ══ -->
-    <div class="cv-right">
+        <div class="cv-exp-layout" aria-label="Experience timeline">
+          <nav class="cv-exp-nav" aria-label="Select experience">
+            <button class="cv-exp-tab is-active" data-exp-target="brut">
+              <span class="cv-exp-tab-title">Brut.</span>
+              <span class="cv-exp-tab-sub">Head of Data &amp; AI</span>
+              <span class="cv-exp-tab-tags">
+                <span>Leadership</span>
+                <span>GenAI</span>
+              </span>
+            </button>
+            <button class="cv-exp-tab" data-exp-target="pollen">
+              <span class="cv-exp-tab-title">Pollen</span>
+              <span class="cv-exp-tab-sub">AI Trainer</span>
+              <span class="cv-exp-tab-tags">
+                <span>Training</span>
+                <span>GenAI</span>
+              </span>
+            </button>
+            <button class="cv-exp-tab" data-exp-target="namr">
+              <span class="cv-exp-tab-title">namR</span>
+              <span class="cv-exp-tab-sub">Head of Data &amp; ML Eng</span>
+              <span class="cv-exp-tab-tags">
+                <span>MLOps</span>
+                <span>Geospatial</span>
+              </span>
+            </button>
+            <button class="cv-exp-tab" data-exp-target="saegus">
+              <span class="cv-exp-tab-title">Saegus</span>
+              <span class="cv-exp-tab-sub">ML Engineer</span>
+              <span class="cv-exp-tab-tags">
+                <span>Consulting</span>
+              </span>
+            </button>
+            <button class="cv-exp-tab" data-exp-target="airfrance">
+              <span class="cv-exp-tab-title">Air France</span>
+              <span class="cv-exp-tab-sub">ML Engineer</span>
+              <span class="cv-exp-tab-tags">
+                <span>Customer insight</span>
+              </span>
+            </button>
+          </nav>
 
-      <!-- ─── QUEST LOG / EXPERIENCE ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-briefcase"></i>// QUEST LOG</h2>
+          <div class="cv-exp-slides">
 
-        <div class="cv-exp-item">
-          <p class="cv-exp-role">HEAD OF DATA &amp; AI</p>
-          <p class="cv-exp-company">Brut.</p>
-          <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> April 2022 – Present</span>
-            <span><i class="fa fa-map-marker"></i> Paris, France</span>
+            <div class="cv-exp-item is-active" data-exp="brut">
+              <p class="cv-exp-role">Head of Data &amp; AI</p>
+              <p class="cv-exp-company">
+                <a href="https://www.brut.media" target="_blank" rel="noopener">Brut.</a>
+              </p>
+              <div class="cv-exp-meta">
+                <span><i class="fa fa-calendar" aria-hidden="true"></i> April 2022 – Present</span>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i> Paris, France</span>
+              </div>
+              <div class="cv-exp-stats">
+                <span class="cv-exp-stat"><strong>8</strong> person team</span>
+                <span class="cv-exp-stat"><strong>&gt;200k€</strong> new revenue</span>
+                <span class="cv-exp-stat"><strong>200+</strong> employees on GenAI</span>
+                <span class="cv-exp-stat"><strong>5+</strong> GenAI products</span>
+              </div>
+              <ul class="cv-exp-bullets">
+                <li><strong>Team:</strong> Built and lead an <strong>8‑person</strong> full‑stack Data &amp; AI team (eng, analytics, ML).</li>
+                <li><strong>Business:</strong> Launched GenAI offers generating <strong>&gt;200k€</strong> in new revenue within months.</li>
+                <li><strong>Impact:</strong> Rolled out a GenAI programme to <strong>200+ employees</strong>, shipped <strong>5+ GenAI products</strong> and unified <strong>10+ data sources</strong> with &gt;95% SLA.</li>
+              </ul>
+            </div>
+
+            <div class="cv-exp-item" data-exp="pollen">
+              <p class="cv-exp-role">AI Trainer</p>
+              <p class="cv-exp-company">
+                <a href="https://pollen.fr/trainers/clement-baccar" target="_blank" rel="noopener">Pollen</a>
+              </p>
+              <div class="cv-exp-meta">
+                <span><i class="fa fa-calendar" aria-hidden="true"></i> June 2023 – Present</span>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i> France</span>
+              </div>
+              <div class="cv-exp-stats">
+                <span class="cv-exp-stat"><strong>200+</strong> people trained</span>
+              </div>
+              <ul class="cv-exp-bullets">
+                <li>Designed and delivered GenAI training to <strong>200+ professionals</strong> (executives, product, tech) across multiple organisations.</li>
+              </ul>
+            </div>
+
+            <div class="cv-exp-item" data-exp="namr">
+              <p class="cv-exp-role">Head of Data &amp; ML Engineering</p>
+              <p class="cv-exp-company">
+                <a href="https://namr.com" target="_blank" rel="noopener">namR</a>
+              </p>
+              <div class="cv-exp-meta">
+                <span><i class="fa fa-calendar" aria-hidden="true"></i> Dec 2018 – April 2022</span>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i> Paris, France</span>
+              </div>
+              <div class="cv-exp-stats">
+                <span class="cv-exp-stat"><strong>34M+</strong> aerial images</span>
+                <span class="cv-exp-stat"><strong>500+</strong> tables &amp; workflows</span>
+                <span class="cv-exp-stat"><strong>10</strong> data engineers</span>
+              </div>
+              <ul class="cv-exp-bullets">
+                <li><strong>Scale:</strong> Industrialised a DL platform processing <strong>34M+ aerial images</strong> for French building characterisation.</li>
+                <li><strong>Stack:</strong> Migrated <strong>500+ tables &amp; workflows</strong> to a code‑first, Airflow‑based modern data platform.</li>
+                <li><strong>Team:</strong> Grew and structured a <strong>10‑person</strong> Data Engineering team with clear hiring and coaching paths.</li>
+              </ul>
+            </div>
+
+            <div class="cv-exp-item" data-exp="saegus">
+              <p class="cv-exp-role">Machine Learning Engineer</p>
+              <p class="cv-exp-company">
+                <a href="https://saegus.com" target="_blank" rel="noopener">Saegus</a>
+              </p>
+              <div class="cv-exp-meta">
+                <span><i class="fa fa-calendar" aria-hidden="true"></i> Feb 2016 – Nov 2018</span>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i> Paris, France</span>
+              </div>
+              <ul class="cv-exp-bullets">
+                <li>Delivered ML use cases for customer insight, experimentation and data‑driven product decisions in large enterprises.</li>
+              </ul>
+            </div>
+
+            <div class="cv-exp-item" data-exp="airfrance">
+              <p class="cv-exp-role">ML Engineer — Customer Insight</p>
+              <p class="cv-exp-company">
+                <a href="https://wwws.airfrance.fr/en/" target="_blank" rel="noopener">Air France</a>
+              </p>
+              <div class="cv-exp-meta">
+                <span><i class="fa fa-calendar" aria-hidden="true"></i> Oct 2014 – Oct 2015</span>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i> Paris, France</span>
+              </div>
+            </div>
+
           </div>
-          <ul class="cv-exp-bullets">
-            <li><strong>Management &amp; Leadership:</strong> Recruited and managed an 8-person full-stack Data team (Data Engineers, Analysts, ML Engineers), fostering a product culture and full technical autonomy.</li>
-            <li><strong>Business &amp; Revenue:</strong> Generated +200k€ in new revenue streams within months by developing commercial offers based on Generative AI.</li>
-            <li><strong>GenAI Strategy &amp; Adoption:</strong> Deployed a global GenAI strategy for 200 employees across 3 continents, achieving a &gt;80% adoption rate.</li>
-            <li><strong>Innovation &amp; Product:</strong> Designed and deployed 5 major GenAI projects into production, transforming content creation and analysis.</li>
-            <li><strong>Infrastructure &amp; Reliability:</strong> Built a unified Analytics platform integrating 10+ data sources with continuous collection ensuring a &gt;95% SLA.</li>
-          </ul>
         </div>
 
-        <div class="cv-exp-item">
-          <p class="cv-exp-role">AI TRAINER</p>
-          <p class="cv-exp-company">Pollen</p>
-          <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> June 2023 – Present</span>
-            <span><i class="fa fa-map-marker"></i> France</span>
-          </div>
-          <ul class="cv-exp-bullets">
-            <li>Trained 200+ professionals on Generative AI across various organisations.</li>
-          </ul>
-        </div>
+      </article>
 
-        <div class="cv-exp-item">
-          <p class="cv-exp-role">HEAD OF DATA &amp; ML ENGINEERING</p>
-          <p class="cv-exp-company">namR</p>
-          <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> Dec 2018 – April 2022</span>
-            <span><i class="fa fa-map-marker"></i> Paris, France</span>
-          </div>
-          <ul class="cv-exp-bullets">
-            <li><strong>Deep Learning &amp; Scale:</strong> Developed and industrialised a Deep Learning inference platform processing 34M+ aerial images for French building characterisation.</li>
-            <li><strong>Transformation &amp; Modern Data Stack:</strong> Led strategic migration of 500+ tables and workflows from legacy systems to a "Code-First" architecture (Airflow), integrating MLOps and Data Quality standards.</li>
-            <li><strong>Team Management:</strong> Grew and structured the team to 10 Data Engineers, managing full-cycle recruitment, career paths, and technical upskilling.</li>
-            <li><strong>Architecture:</strong> Designed automated ingestion pipelines for Open Data, reducing technical debt and accelerating update cycles.</li>
-          </ul>
-        </div>
-
-        <div class="cv-exp-item">
-          <p class="cv-exp-role">MACHINE LEARNING ENGINEER</p>
-          <p class="cv-exp-company">Saegus</p>
-          <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> Feb 2016 – Nov 2018</span>
-            <span><i class="fa fa-map-marker"></i> Paris, France</span>
-          </div>
-          <ul class="cv-exp-bullets">
-            <li>Machine learning engineer focused on customer insight and data-driven product development.</li>
-          </ul>
-        </div>
-
-        <div class="cv-exp-item">
-          <p class="cv-exp-role">ML ENGINEER — CUSTOMER INSIGHT</p>
-          <p class="cv-exp-company">Air France</p>
-          <div class="cv-exp-meta">
-            <span><i class="fa fa-calendar"></i> Oct 2014 – Oct 2015</span>
-            <span><i class="fa fa-map-marker"></i> Paris, France</span>
-          </div>
-        </div>
-
-      </div><!-- /quest log -->
-
-      <!-- ─── ACHIEVEMENTS / CONFERENCES ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-microphone"></i>// ACHIEVEMENTS UNLOCKED</h2>
+      <!-- VIDEO SECTION -->
+      <section class="cv-card" aria-labelledby="cv-video-heading">
+        <h2 id="cv-video-heading"><i class="fa fa-youtube-play" aria-hidden="true"></i>VIDEOS &amp; TALKS</h2>
         <p class="cv-conf-text">
-          Speaker at various tech events and guest on podcasts discussing <strong>Data Strategy</strong>,
-          <strong>Generative AI</strong> and <strong>MLOps</strong>. Topics cover GenAI adoption in the enterprise,
-          modern data architectures, and lessons from building data teams at scale.
+          Selected conference talks, keynotes and interviews on <strong>data strategy</strong>, <strong>Generative AI adoption at scale</strong>
+          and <strong>MLOps in production</strong>.
         </p>
-      </div>
+        <div class="cv-video-slider" aria-label="Video slider">
+          <button type="button" class="cv-video-slider-prev" aria-label="Previous video"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          <button type="button" class="cv-video-slider-next" aria-label="Next video"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+          <div class="cv-video-track">
+            <article class="cv-video-slide is-active" data-video-index="0">
+              <div class="cv-video-card">
+                <iframe src="https://www.youtube.com/embed/FHRpPeoPRQ4" title="Talk – YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </article>
+            <article class="cv-video-slide" data-video-index="1">
+              <div class="cv-video-card">
+                <iframe src="https://www.youtube.com/embed/L8_SFgwgX14" title="Talk – YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </article>
+            <article class="cv-video-slide" data-video-index="2">
+              <div class="cv-video-card">
+                <iframe src="https://www.youtube.com/embed/Pxm_Fupr1kw" title="Talk – YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </article>
+            <article class="cv-video-slide" data-video-index="3">
+              <div class="cv-video-card">
+                <iframe src="https://www.youtube.com/embed/SbOfefBMiuI" title="Talk – YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </article>
+            <article class="cv-video-slide" data-video-index="4">
+              <div class="cv-video-card">
+                <iframe src="https://www.youtube.com/embed/e65GwpqRpOg" title="Talk – YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </article>
+            <article class="cv-video-slide" data-video-index="5">
+              <div class="cv-video-card">
+                <iframe src="https://www.youtube.com/embed/111FOvc3JDs" title="Talk – YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </article>
+          </div>
+          <div class="cv-video-dots" aria-label="Slide navigation">
+            <button type="button" class="cv-video-dot is-active" aria-label="Video 1" data-slide="0"></button>
+            <button type="button" class="cv-video-dot" aria-label="Video 2" data-slide="1"></button>
+            <button type="button" class="cv-video-dot" aria-label="Video 3" data-slide="2"></button>
+            <button type="button" class="cv-video-dot" aria-label="Video 4" data-slide="3"></button>
+            <button type="button" class="cv-video-dot" aria-label="Video 5" data-slide="4"></button>
+            <button type="button" class="cv-video-dot" aria-label="Video 6" data-slide="5"></button>
+          </div>
+        </div>
+      </section>
 
-      <!-- ─── DOWNLOAD ─── -->
-      <div class="cv-download-wrap">
-        <a href="/pages/cv_baccar_clement.pdf" class="cv-download" download>
-          <i class="fa fa-download"></i> DOWNLOAD.PDF
-        </a>
-      </div>
-
-    </div><!-- /right -->
-
-    <!-- ══ LEFT — supporting content ══ -->
-    <div class="cv-left">
-
-      <!-- ─── INVENTORY / TECH STACK ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-code"></i>// INVENTORY</h2>
+      <!-- TECH STACK -->
+      <section class="cv-card" aria-labelledby="cv-skills-heading">
+        <h2 id="cv-skills-heading"><i class="fa fa-code" aria-hidden="true"></i>TECH STACK</h2>
 
         <div class="cv-chips-group">
-          <p class="cv-chips-group-label">◆ Languages &amp; Core</p>
+          <button type="button" class="cv-chips-group-label" aria-expanded="false">Languages &amp; core</button>
           <ul class="cv-chips">
             <li>Python</li><li>SQL</li><li>Pandas</li>
           </ul>
         </div>
 
         <div class="cv-chips-group">
-          <p class="cv-chips-group-label">◆ ML &amp; GenAI</p>
+          <button type="button" class="cv-chips-group-label" aria-expanded="false">ML &amp; Generative AI</button>
           <ul class="cv-chips">
-            <li>PyTorch</li><li>scikit-learn</li><li>LangChain</li><li>DVC</li>
+            <li>PyTorch</li><li>scikit‑learn</li><li>DVC</li>
           </ul>
         </div>
 
         <div class="cv-chips-group">
-          <p class="cv-chips-group-label">◆ Data Eng &amp; DBs</p>
+          <button type="button" class="cv-chips-group-label" aria-expanded="false">Agentic frameworks</button>
+          <ul class="cv-chips">
+            <li>LangChain</li><li>Langfuse</li><li>Pydantic</li><li>Temporal</li><li>Vespa</li><li>Gemini</li><li>Vespa</li>
+          </ul>
+        </div>
+
+        <div class="cv-chips-group">
+          <button type="button" class="cv-chips-group-label" aria-expanded="false">Vibe coding</button>
+          <ul class="cv-chips">
+            <li>Claude Code</li><li>Cursor</li><li>Lovable</li>
+          </ul>
+        </div>
+
+        <div class="cv-chips-group">
+          <button type="button" class="cv-chips-group-label" aria-expanded="false">Data engineering &amp; databases</button>
           <ul class="cv-chips">
             <li>PostgreSQL</li><li>Elastic</li><li>BigQuery</li><li>Neo4j</li>
-            <li>Airflow</li><li>Prefect</li><li>Dataiku</li><li>dbt</li>
+            <li>Airflow</li><li>Prefect</li><li>dbt</li>
           </ul>
         </div>
 
         <div class="cv-chips-group">
-          <p class="cv-chips-group-label">◆ Cloud &amp; Infra</p>
+          <button type="button" class="cv-chips-group-label" aria-expanded="false">Cloud &amp; infrastructure</button>
           <ul class="cv-chips">
-            <li>GCP</li><li>Scaleway</li><li>OVH</li>
-            <li>Terraform</li><li>Cloudbuild</li><li>GitLab CI</li>
+            <li>GCP</li><li>Kubernetes</li><li>Helm</li>
+            <li>Terraform</li><li>Cloud Build</li><li>GitLab CI</li>
           </ul>
         </div>
 
         <div class="cv-chips-group">
-          <p class="cv-chips-group-label">◆ API &amp; Dev</p>
+          <button type="button" class="cv-chips-group-label" aria-expanded="false">APIs &amp; backend</button>
           <ul class="cv-chips">
             <li>Flask</li><li>FastAPI</li><li>GitHub</li><li>GitLab</li>
           </ul>
         </div>
 
         <div class="cv-chips-group">
-          <p class="cv-chips-group-label">◆ Geospatial</p>
+          <button type="button" class="cv-chips-group-label" aria-expanded="false">Geospatial</button>
           <ul class="cv-chips">
             <li>PostGIS</li><li>Rasterio</li><li>BigQuery GIS</li>
             <li>pgRouting</li><li>QGIS</li>
           </ul>
         </div>
-      </div><!-- /inventory -->
+      </section>
 
-      <!-- ─── TRAINING ARC / EDUCATION ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-graduation-cap"></i>// TRAINING ARC</h2>
+      <!-- COMMUNITY -->
+      <section class="cv-card" aria-labelledby="cv-community-heading">
+        <h2 id="cv-community-heading"><i class="fa fa-users" aria-hidden="true"></i>COMMUNITY</h2>
+
+        <div class="cv-community-item">
+          <p class="cv-community-role">Member (Core)</p>
+          <p class="cv-community-org">
+            <a href="https://www.tech.rocks/" target="_blank" rel="noopener">
+              Tech.Rocks
+            </a>
+          </p>
+          <p class="cv-community-meta"><i class="fa fa-calendar" aria-hidden="true"></i> Nov 2024 – Present · France</p>
+          <p class="cv-community-desc">Network of tech leaders in France.</p>
+        </div>
+
+        <div class="cv-community-item">
+          <p class="cv-community-role">Member</p>
+          <p class="cv-community-org">
+            <a href="https://www.moderndatanetwork.org/" target="_blank" rel="noopener">
+              Modern Data Network
+            </a>
+          </p>
+          <p class="cv-community-meta"><i class="fa fa-calendar" aria-hidden="true"></i> France</p>
+          <p class="cv-community-desc">Largest community of Data &amp; AI leaders in France; keynotes, workshops and networking.</p>
+        </div>
+
+        <div class="cv-community-item">
+          <p class="cv-community-role">Data Architect Advisor</p>
+          <p class="cv-community-org">
+            <a href="https://thefuturesociety.org/" target="_blank" rel="noopener">
+              The Future Society – Project AIM
+            </a>
+          </p>
+          <p class="cv-community-meta"><i class="fa fa-calendar" aria-hidden="true"></i> Jan 2021 – July 2022 · Remote</p>
+          <p class="cv-community-desc">Think tank incubated at Harvard Kennedy School focused on AI governance.</p>
+        </div>
+
+        <div class="cv-community-item">
+          <p class="cv-community-role">GIS Engineer (Volunteer)</p>
+          <p class="cv-community-org">
+            <a href="https://www.surfrider.fr/actualites/plastic-origins-lutter-contre-pollution-plastique-coeur-europe/" target="_blank" rel="noopener">
+              SurfRider – Plastic Origins
+            </a>
+          </p>
+          <p class="cv-community-meta"><i class="fa fa-calendar" aria-hidden="true"></i> Mar 2020 – Dec 2021 · Remote</p>
+          <p class="cv-community-desc">Mapping European riverine plastic pollution using GIS and computer vision.</p>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="cv-card" aria-labelledby="cv-education-heading">
+        <h2 id="cv-education-heading"><i class="fa fa-graduation-cap" aria-hidden="true"></i>EDUCATION</h2>
 
         <div class="cv-edu-item">
           <p class="cv-edu-degree">Advanced Master, IT Management (Joint Degree)</p>
@@ -221,73 +357,29 @@ title: Clément Baccar · CV
 
         <div class="cv-edu-item">
           <p class="cv-edu-degree">Master 2 Data Science, Econometrics, ML</p>
-          <p class="cv-edu-school">Panthéon-Sorbonne (Paris I)</p>
+          <p class="cv-edu-school">Panthéon‑Sorbonne (Paris I)</p>
           <p class="cv-edu-date">2014 – 2015</p>
         </div>
-      </div><!-- /education -->
+      </section>
 
-      <!-- ─── LANGUAGES UNLOCKED ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-globe"></i>// LANGUAGES UNLOCKED</h2>
+      <!-- DOWNLOAD CV (at the very end) -->
+      <div class="cv-download-wrap">
+        <a href="/CV_CBACCAR.pdf" class="cv-download" download>
+          <i class="fa fa-download" aria-hidden="true"></i> Download CV (PDF)
+        </a>
+      </div>
 
-        <div class="cv-lang">
-          <div class="cv-lang-header">
-            <span class="cv-lang-name">French</span>
-            <span class="cv-lang-level">NATIVE</span>
-          </div>
-          <div class="cv-lang-bar"><div class="cv-lang-bar-fill" style="width:100%"></div></div>
-        </div>
+  </main>
 
-        <div class="cv-lang">
-          <div class="cv-lang-header">
-            <span class="cv-lang-name">English</span>
-            <span class="cv-lang-level">PROFESSIONAL</span>
-          </div>
-          <div class="cv-lang-bar"><div class="cv-lang-bar-fill" style="width:85%"></div></div>
-        </div>
-      </div><!-- /languages -->
-
-      <!-- ─── GUILD MEMBERSHIPS ─── -->
-      <div class="cv-card">
-        <h2><i class="fa fa-users"></i>// GUILD MEMBERSHIPS</h2>
-
-        <div class="cv-community-item">
-          <p class="cv-community-role">Member (Core)</p>
-          <p class="cv-community-org">Tech.Rocks</p>
-          <p class="cv-community-meta"><i class="fa fa-calendar"></i> Nov 2024 – Present &nbsp;·&nbsp; France</p>
-          <p class="cv-community-desc">Network of tech leaders in France.</p>
-        </div>
-
-        <div class="cv-community-item">
-          <p class="cv-community-role">Data Architect Advisor</p>
-          <p class="cv-community-org">The Future Society – Project AIM</p>
-          <p class="cv-community-meta"><i class="fa fa-calendar"></i> Jan 2021 – July 2022 &nbsp;·&nbsp; Remote</p>
-          <p class="cv-community-desc">Think tank incubated at Harvard Kennedy School on AI governance.</p>
-        </div>
-
-        <div class="cv-community-item">
-          <p class="cv-community-role">GIS Engineer (Volunteer)</p>
-          <p class="cv-community-org">SurfRider – Plastic Origin</p>
-          <p class="cv-community-meta"><i class="fa fa-calendar"></i> Mar 2020 – Dec 2021 &nbsp;·&nbsp; Remote</p>
-          <p class="cv-community-desc">Mapping European riverine plastic pollution using GIS and computer vision.</p>
-        </div>
-      </div><!-- /guild -->
-
-    </div><!-- /left -->
-
-  </div><!-- /cv-grid -->
-
-  <!-- ════════════════════════════════════
-       FOOTER
-  ════════════════════════════════════ -->
+  <!-- FOOTER -->
   <footer class="arcade-footer">
-    <div class="arcade-footer-line">© 2024 CLÉMENT BACCAR &nbsp;·&nbsp; GAME OVER &nbsp;·&nbsp; CONTINUE?</div>
-    <div class="arcade-social">
-      <a href="https://twitter.com/baccarclement"  title="Twitter" ><i class="fa fa-twitter"></i></a>
-      <a href="https://github.com/clembac"         title="GitHub"  ><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/clement-baccar-a23b6768/" title="LinkedIn" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
-      <a href="mailto:baccar.clement@gmail.com"    title="Email"   ><i class="fa fa-envelope"></i></a>
+    <div class="arcade-footer-line">
+      © 2024 Clément Baccar · Head of Data &amp; AI
+    </div>
+    <div class="arcade-social" aria-label="Social links">
+      <a href="https://twitter.com/baccarclement" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://github.com/clembac" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/clement-baccar-a23b6768/" title="LinkedIn" target="_blank" rel="noopener"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="mailto:baccar.clement@gmail.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
     </div>
   </footer>
-
-</div><!-- /arcade-wrap -->
