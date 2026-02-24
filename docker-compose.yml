@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  jekyll:
+    build: .
+    command: sh -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --port 4000 --watch"
+    working_dir: /usr/src/app
+    ports:
+      - "4000:4000"
+    environment:
+      JEKYLL_ENV: development
+    volumes:
+      # Mount the site so edits on your machine are reflected in the container
+      - .:/usr/src/app
+      # Cache bundle between runs
+      - bundle_cache:/usr/local/bundle
+
+volumes:
+  bundle_cache:
+
